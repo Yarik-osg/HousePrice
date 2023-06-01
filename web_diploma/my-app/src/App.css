@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  background-color: #c6d0ee;
+  min-height: 931px;
+}
+
+button {
+  margin-top: 10px;
+
+}
+.App-header {
+  background-color: #c6d0ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #0581d2;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.priceInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

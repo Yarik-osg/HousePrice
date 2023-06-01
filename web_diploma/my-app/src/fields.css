@@ -1,0 +1,13 @@
+.fields {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: end;
+}
+
+.fieldElement {
+    width: 30%;
+}
+.fieldInput {
+    width: 200px;
+}

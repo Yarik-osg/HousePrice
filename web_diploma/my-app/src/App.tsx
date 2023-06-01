@@ -9,6 +9,8 @@ const App = () => {
     const [loading, setLoading] = useState(false)
     const [price, setPrice] = useState(0)
 
+
+    //POST request to send data to the server
     const sendData = (values: any) => {
         setLoading(true)
         axios.post("http://127.0.0.1:8000/postData/", values)
@@ -22,6 +24,7 @@ const App = () => {
             })
         getData()
     }
+    //GET request to collect predicted price
     const getData = () => {
         axios.get("http://127.0.0.1:8000/getData/").then(data => {
             setPrice(data.data)
@@ -43,6 +46,7 @@ const App = () => {
                   onFinish={sendData}>
                 {loading ? <Spin size="large"/> :
                     <>
+                        {/*All fields that we have in UI*/}
                         <Fields/>
                         <div>
                             <Button type="primary" htmlType="submit"
